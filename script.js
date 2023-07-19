@@ -51,38 +51,38 @@ document.getElementById('searchBtnPc').addEventListener('click', function() {
 
   // LOGIC FOR MOBILE SEARCH
 
-  // document.getElementById('searchBtnMobile').addEventListener('click', function() {
-  //   // Function to generate a random string of letters
-  //   function generateRandomLetters(length) {
-  //     const letters = 'abcdefghijklmnopqrstuvwxyz';
-  //     let randomString = '';
-  //     for (let i = 0; i < length; i++) {
-  //       const randomIndex = Math.floor(Math.random() * letters.length);
-  //       randomString += letters.charAt(randomIndex);
-  //     }
-  //     return randomString;
-  //   }
+  document.getElementById('searchBtnMobile').addEventListener('click', function() {
+    // Function to generate a random string of letters
+    function generateRandomLetters(length) {
+      const letters = 'abcdefghijklmnopqrstuvwxyz';
+      let randomString = '';
+      for (let i = 0; i < length; i++) {
+        const randomIndex = Math.floor(Math.random() * letters.length);
+        randomString += letters.charAt(randomIndex);
+      }
+      return randomString;
+    }
   
-  //   // Function to open multiple search tabs
-  //   function openMultipleTabs(topics) {
-  //     topics.forEach(function(topic) {
-  //       const searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(topic)}`;
-  //       window.open(searchUrl , "_blank");
-  //     });
-  //   }
+    // Function to open multiple search tabs
+    function openMultipleTabs(topics) {
+      topics.forEach(function(topic) {
+        const searchUrl = `https://www.bing.com/search?q=${encodeURIComponent(topic)}`;
+        window.open(searchUrl , "_self");
+      });
+    }
   
-  //   // Generate a random topic (3 characters)
-  //   const topic1 = generateRandomLetters(3);
-  //   const topic2 = generateRandomLetters(3);
-  //   const topic3 = generateRandomLetters(3);
+    // Generate a random topic (3 characters)
+    const topic1 = generateRandomLetters(3);
+    const topic2 = generateRandomLetters(3);
+    const topic3 = generateRandomLetters(3);
   
-  //   // Open the search URLs in multiple tabs
-  //   const searchTopics = [topic1, topic2, topic3];
-  //   openMultipleTabs(searchTopics);
+    // Open the search URLs in multiple tabs
+    const searchTopics = [topic1, topic2, topic3];
+    openMultipleTabs(searchTopics);
 
 
     
-  // });
+  });
 
 
 
