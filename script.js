@@ -57,5 +57,5 @@ document.getElementById("searchBtnPc").addEventListener("click", function () {
   }
   console.log(searchTopics);
 
-  // openMultipleTabs(searchTopics);
+  openMultipleTabs(searchTopics);
 });
