@@ -1,27 +1,101 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #e1e5ea;
-  }
-  
-  .container {
-    text-align: center;
-  }
-  
-  button {
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    background-color: #1a1d1c;
+/* body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #e1e5ea;
+}
+
+.container {
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #1a1d1c;
     color: #fff;
     border-radius: 15px;
     border: none;  
   }
-  
+  */
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=REM:wght@200;300&display=swap");
 
-  
+/* Default styles for light theme */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "REM", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.subContainer {
+  padding: 12px;
+  height: max-content;
+  width: max-content;
+  border: 2px solid #f39c12;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Dark theme */
+body.dark-theme {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+button.dark-theme {
+  background-color: #2ecc71;
+}
+
+/* Additional styling for radio buttons */
+.radio-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.radio-buttons label {
+  margin-right: 10px;
+}
+
+/* Styling for the theme toggle button */
+#themeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #f39c12;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}

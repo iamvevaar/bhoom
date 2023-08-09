@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const themeToggle = document.getElementById("themeToggle");
+  const body = document.body;
+
+  themeToggle.addEventListener("click", function () {
+    body.classList.toggle("dark-theme");
+  });
+});
+
+
+
 // Function to generate a random string of letters
 function generateRandomLetters(length) {
   const letters = "abcdefghijklmnopqrstuvwxyz";
@@ -19,7 +30,7 @@ function openMultipleTabs(topics) {
   });
 }
 
-let numberOfTopics = 20;
+let numberOfTopics = 24;
 const searchTopics = [];
 
 // Handle radio button change event
@@ -46,5 +57,5 @@ document.getElementById("searchBtnPc").addEventListener("click", function () {
   }
   console.log(searchTopics);
 
-  openMultipleTabs(searchTopics);
+  // openMultipleTabs(searchTopics);
 });
