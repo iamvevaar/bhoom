@@ -1,3 +1,4 @@
+//Function for toggling between the dark and light theme
 document.addEventListener("DOMContentLoaded", function () {
   const themeToggle = document.getElementById("themeToggle");
   const body = document.body;
@@ -57,5 +58,5 @@ document.getElementById("searchBtnPc").addEventListener("click", function () {
   }
   console.log(searchTopics);
 
-  openMultipleTabs(searchTopics);
+  // openMultipleTabs(searchTopics);
 });
