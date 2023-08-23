@@ -54,7 +54,7 @@ document.getElementById("searchBtnPc").addEventListener("click", function () {
   searchTopics.length = 0; // Clear the previous topics
 
   for (let i = 0; i < numberOfTopics; i++) {
-    searchTopics.push(generateRandomLetters(3));
+    searchTopics.push(generateRandomLetters(4));
   }
   console.log(searchTopics);
 
