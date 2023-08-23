@@ -9,6 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Update the length of generateRandomLetters based on the slider value
+const lengthSlider = document.getElementById("lengthSlider");
+const lengthDisplay = document.getElementById("lengthDisplay");
+
+lengthSlider.addEventListener("input", function () {
+  const newLength = parseInt(lengthSlider.value);
+  lengthDisplay.textContent = newLength;
+});
+
+
 
 // Function to generate a random string of letters
 function generateRandomLetters(length) {
@@ -52,9 +62,9 @@ radioPc.addEventListener("change", function () {
 
 document.getElementById("searchBtnPc").addEventListener("click", function () {
   searchTopics.length = 0; // Clear the previous topics
-
+  const currentLength = parseInt(lengthSlider.value);
   for (let i = 0; i < numberOfTopics; i++) {
-    searchTopics.push(generateRandomLetters(4));
+    searchTopics.push(generateRandomLetters(currentLength));
   }
   console.log(searchTopics);
 
