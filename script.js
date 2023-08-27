@@ -66,7 +66,7 @@ document.getElementById("searchBtnPc").addEventListener("click", function () {
   for (let i = 0; i < numberOfTopics; i++) {
     searchTopics.push(generateRandomLetters(currentLength));
   }
-  console.log(searchTopics);
+  // console.log(searchTopics);
 
   openMultipleTabs(searchTopics);
 });
